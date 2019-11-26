@@ -60,9 +60,9 @@ COMPLETE 면 IDLE 상태로 보낸다
 #
 ### FPGA
 **waveform**
-
+![](https://github.com/MayBMore/LogicDesign/blob/master/Practice09/waveform.PNG)
 **quartus**
-
+![](https://github.com/MayBMore/LogicDesign/blob/master/Practice09/KakaoTalk_20191126_214525954.jpg)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTE2NzgwNDgwN119
 -->
