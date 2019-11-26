@@ -63,6 +63,7 @@ COMPLETE 면 IDLE 상태로 보낸다
 ![](https://github.com/MayBMore/LogicDesign/blob/master/Practice09/waveform.PNG)
 **quartus**
 ![](https://github.com/MayBMore/LogicDesign/blob/master/Practice09/KakaoTalk_20191126_214525954.jpg)
+리모컨의 전원버튼을 눌렀을때
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTE2NzgwNDgwN119
 -->
