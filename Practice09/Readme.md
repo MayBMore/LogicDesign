@@ -123,11 +123,15 @@ subplot(N_subFig,1,4);
 plot(t,RFsignal);</code>
 </pre>
 > * RF signal(bandpass signal)을 알 수 있음
+> > * subplot 4 : RFsignal
 >* TX에서 up-conversion (RX에서 down-conversion)
 > * .*은 요소별 곱
-> 
+
+### RX
+#### coherent detection
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDkxODE2OCwyMzE1NzA5OTAsLTg1Mz
-EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
-fQ==
+eyJoaXN0b3J5IjpbODg4MjY5NDg3LDIzMTU3MDk5MCwtODUzMT
+IyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
+
 -->
