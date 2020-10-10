@@ -91,16 +91,27 @@ end</code>
 <code>%1. DAC
 reconstFilter = ones(1,Tsym*fs);</code>
 </pre>
-
->* 
-
-
 > *참조 개념 : ADC/DAC*
 sampling + Quantization
 
+#### filter & bbInput convolution
+<pre>
+<code>%filter & bbInput convolution
+bbsignal = conv(bbInput, reconstFilter);
+bbsignal = bbsignal(1:length(t));
+
+figure(1);
+subplot(N_subFig,1,1);
+plot(t,bbInput);
+subplot(N_subFig,1,2);
+plot(t,real(bbsignal));
+subplot(N_subFig,1,3);
+plot(t,imag(bbsignal));</code>
+</pre>
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMjc5NTQ1OCwyMzE1NzA5OTAsLTg1Mz
-EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
-fQ==
+eyJoaXN0b3J5IjpbNjQ0NTUwMzY0LDIzMTU3MDk5MCwtODUzMT
+IyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
+
 -->
