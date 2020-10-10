@@ -77,12 +77,10 @@ bbSym = (1/sqrt(2)) * ( (2*randi(2,1,Nsym)-3) + j*(2*randi(2,1,Nsym)-3));
 bbInput = zeros(1,length(t));
 for i = 1 : Nsym
     bbInput(Tsym*fs*(i-1)+1) = bbSym(i);
-end
-</code>
+end</code>
 </pre>
 
-> * ht 벡터를 1부터 ht의 길이만큼(=1024) 0으로 채운 것으로 정의
-> * ht(Tp) 벡터를 1부터 ht(Tp) 길이만큼 (=8) 1로 채운 것으로 정의
+> * 
 
 ### frequency response graph
 <pre>
@@ -98,6 +96,6 @@ plot(abs(H));</code>
 > * figure(100) : 그래프 창 생성
 > * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDI4MTQwMiwtODUzMTIyNzk3LDkxMT
-QxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
+eyJoaXN0b3J5IjpbMjMxNTcwOTkwLC04NTMxMjI3OTcsOTExND
+E5NDM4LDU2OTE5NjMyNCwxMTY3ODA0ODA3XX0=
 -->
