@@ -43,24 +43,29 @@ plot(abs(H));</code>
 > * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
 
 ***
-###
+### 포인트
 * Tp 간격을 늘리면(줄이면) 그래프가 어떻게 바뀌는가
 * Tp 첫번째와 마지막 숫자를 바꾸면 그래프가 어떻게 바뀌는가
 * Tp element의 수를 바꾸면 그래프가 어떻게 바뀌는가 
 ***
 ## RF sim
 
-### parameters
+### parameter configuration
 
 <pre>
-<code>%parameters --------------------
-length_ht = 1024; % length of channel impulse response 
-%delay profile (tau_i or positions of the impulses)
-Tp = [2 3 5 6 7 8 9 100];</code>
+<code>%parameter configuration ---------------------------
+Tsym = 1;                   % symbol duration (s)
+Nsym = 10;                  % number of symbols
+fs = 1000;                  % sampling rate (Hz)
+fc = 10;                    % carrier frequence
+fe = 0;                     % frequency offset
+
+Tmax = Tsym*Nsym;           % simulation time (s)
+t = [1/fs : 1/fs : Tmax];   % time vector
+N_subFig = 6;</code>
 </pre>
 
-> * ht의 length를 1024로 설정함
-> * time delay spread에 따라 그래프가 달라짐
+> * 
 ```
 참조 개념 : impluse response
 *  Band-pass system에 대한 baseband representation 정의
@@ -91,6 +96,6 @@ plot(abs(H));</code>
 > * figure(100) : 그래프 창 생성
 > * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0NTI2MTI4LC04NTMxMjI3OTcsOTExND
-E5NDM4LDU2OTE5NjMyNCwxMTY3ODA0ODA3XX0=
+eyJoaXN0b3J5IjpbLTgyNzkzODQyMCwtODUzMTIyNzk3LDkxMT
+QxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
 -->
