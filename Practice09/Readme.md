@@ -109,9 +109,12 @@ subplot(N_subFig,1,3);
 plot(t,imag(bbsignal));</code>
 </pre>
 
-
+> * baseband signal을 알 수 있음
+> > * subplot 1 : bbInput
+> >* subplot 2 : bbInput의 실수
+> > * sub
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ0NTUwMzY0LDIzMTU3MDk5MCwtODUzMT
-IyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
-
+eyJoaXN0b3J5IjpbLTI1MjM4MzQ5MywyMzE1NzA5OTAsLTg1Mz
+EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
+fQ==
 -->
