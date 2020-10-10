@@ -129,9 +129,21 @@ plot(t,RFsignal);</code>
 
 ### RX
 #### coherent detection
+<pre>
+<code>%3. coherent detection
+Ich = RFsignal .*cos(2*pi*(fc+fe)*t);
+Qch = RFsignal .*sin(2*pi*(fc+fe)*t);
 
+subplot(N_subFig,1,5);
+plot(t,Ich);
+subplot(N_subFig,1,6);
+plot(t,Qch);</code>
+</pre>
+
+> * TX에서 보낸 RFsignal을 I-channel과 Q-channel로 분리해서 받음
+>  * I-ch
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg4MjY5NDg3LDIzMTU3MDk5MCwtODUzMT
-IyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
+eyJoaXN0b3J5IjpbMTc0OTYzMTIsMjMxNTcwOTkwLC04NTMxMj
+I3OTcsOTExNDE5NDM4LDU2OTE5NjMyNCwxMTY3ODA0ODA3XX0=
 
 -->
