@@ -81,12 +81,12 @@ end</code>
 </pre>
 
  * randi : random 함수. 1xNsym벡터에 2가 최대인 난수 발생
-> > bbSym이 왜 저런 함수를 가졌지
-> >> 추측 1. (2*randi(2,1,Nsym)-3)로 +1과 -1 크기를 가진 난수 발생
-> >> 추측 2. (1/sqrt(2))를 곱함으로써 크기를 1로 맞춤
-> 
-> 1부터 t의 길이만큼 0을 가지는 벡터 bbInput 정의
-> > bbSym(i)를 bbInput에 저장
+	 * bbSym이 왜 저런 함수를 가졌지
+		* 추측 1. (2*randi(2,1,Nsym)-3)로 +1과 -1 크기를 가진 난수 발생
+		* 추측 2. (1/sqrt(2))를 곱함으로써 크기를 1로 맞춤
+ 
+* 1부터 t의 길이만큼 0을 가지는 벡터 bbInput 정의
+	* bbSym(i)를 bbInput에 저장
 
 > *참고 개념 : Baseband*
 > * low pass
@@ -117,10 +117,10 @@ subplot(N_subFig,1,3);
 plot(t,imag(bbsignal));</code>
 </pre>
 
-> * baseband signal을 알 수 있음
-> > * subplot 1 : bbInput
-> >* subplot 2 : bbInput의 실수부
-> > * subplot 3 : bbInput의 허수부
+ * baseband signal을 알 수 있음
+	 * subplot 1 : bbInput
+	* subplot 2 : bbInput의 실수부
+	 * subplot 3 : bbInput의 허수부
 
 #### up-conversion
 <pre>
@@ -130,10 +130,10 @@ RFsignal = real(bbsignal).*cos(2*pi*fc*t) - imag(bbsignal).*sin(2*pi*fc*t);
 subplot(N_subFig,1,4);
 plot(t,RFsignal);</code>
 </pre>
-> * RF signal(bandpass signal)을 알 수 있음
-> > * subplot 4 : RFsignal
->* TX에서 up-conversion (RX에서 down-conversion)
-> * .*은 요소별 곱
+ * RF signal(bandpass signal)을 알 수 있음
+	 * subplot 4 : RFsignal
+* TX에서 up-conversion (RX에서 down-conversion)
+ * .*은 요소별 곱
 
 > *참고 개념 : Mixer*
 > 다른 주파수로 평행이동 (frequency translation)
@@ -191,7 +191,7 @@ ph_rx=angle(bbSym_rx);</code>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDk4NzMxODMsMTQ5NDQ0NDg5NCwyMz
-E1NzA5OTAsLTg1MzEyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0
-LDExNjc4MDQ4MDddfQ==
+eyJoaXN0b3J5IjpbMTgwMTYzNjAzNSwxNDk0NDQ0ODk0LDIzMT
+U3MDk5MCwtODUzMTIyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQs
+MTE2NzgwNDgwN119
 -->
