@@ -175,10 +175,20 @@ plot(t,Qch);</code>
 > ```
 >	* Correlation Reciever 
 > matched filter 수신기 구조
-	> 	*
+		 > 		* 동기화 -> correlation 반복 수행
+
+#### Low Pass Filter
+<pre>
+<code> %4. Low Pass Filter
+for i = 1 : Nsym
+    n_start = (i-1)*Tsym*fs;
+    bbSym_rx(i) = sum( Ich(n_start+1:n_start+Tsym*fs) - j*Qch(n_start+1:n_start+Tsym*fs) );
+end </code>
+</pre>
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY0MzI0MTM3LDE0OTQ0NDQ4OTQsMjMxNT
-cwOTkwLC04NTMxMjI3OTcsOTExNDE5NDM4LDU2OTE5NjMyNCwx
-MTY3ODA0ODA3XX0=
+eyJoaXN0b3J5IjpbLTk4Nzk4MzQyNiwxNDk0NDQ0ODk0LDIzMT
+U3MDk5MCwtODUzMTIyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQs
+MTE2NzgwNDgwN119
 -->
