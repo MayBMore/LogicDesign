@@ -82,6 +82,7 @@ end</code>
 
 > * randi : random 함수. 1xNsym벡터에 2가 최대인 난수 발생
 > > bbSym이 왜 저런 함수를 가졌지
+> >> 추측 1. 
 > 
 > 1부터 t의 길이만큼 0을 가지는 벡터 bbInput 정의
 > > bbSym(i)를 bbInput에 저장
@@ -174,7 +175,7 @@ plot(t,Qch);</code>
 >	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NDQ0NDg5NCwyMzE1NzA5OTAsLTg1Mz
-EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
-fQ==
+eyJoaXN0b3J5IjpbLTcxMzQ2Mjc1NCwxNDk0NDQ0ODk0LDIzMT
+U3MDk5MCwtODUzMTIyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQs
+MTE2NzgwNDgwN119
 -->
