@@ -80,7 +80,7 @@ for i = 1 : Nsym
 end</code>
 </pre>
 
-> * 
+> * randi : random 함수. 1xNsym벡터에 2가 최대인 난수 발생
 
 ### frequency response graph
 <pre>
@@ -96,6 +96,7 @@ plot(abs(H));</code>
 > * figure(100) : 그래프 창 생성
 > * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxNTcwOTkwLC04NTMxMjI3OTcsOTExND
-E5NDM4LDU2OTE5NjMyNCwxMTY3ODA0ODA3XX0=
+eyJoaXN0b3J5IjpbMTM0Mzk2MDE1LDIzMTU3MDk5MCwtODUzMT
+IyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
+
 -->
