@@ -95,12 +95,15 @@ figure(100);
 plot(abs(H));</code>
 </pre>
 
->*  ht와 length_ht를 fourier 한 것을 H로 정의
->*  H 벡터를 반 잘라 앞의 것은 뒤로, 뒤의 것은 앞으로 붙여서 새로운 H 벡터를 만듦 (wrap around)
-> * figure(100) : 그래프 창 생성
-> * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
+>* 
+
+
+*참조 개념 : ADC/DAC*
+*  sampling + Quantization
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MTYzMzQ5NSwyMzE1NzA5OTAsLTg1Mz
+eyJoaXN0b3J5IjpbMTc5OTY3NjgwMiwyMzE1NzA5OTAsLTg1Mz
 EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
 fQ==
 -->
