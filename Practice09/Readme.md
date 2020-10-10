@@ -12,12 +12,12 @@ Tp = [2 3 5 6 7 8 9 100];</code>
 
 > * ht의 length를 1024로 설정함
 > * time delay spread에 따라 그래프가 달라짐
-```
-참조 개념 : impluse response
-*  Band-pass system에 대한 baseband representation 정의
-* 일반 baseband representation과 유사하게 복소수로 표현
+
+>참조 개념 : impluse response
+>*  Band-pass system에 대한 baseband representation 정의
+>* 일반 baseband representation과 유사하게 복소수로 표현
 > h(t) = 2hI(t)cos(2pifct)-2hQ(t)sin(2pifct)
-```
+
 ### generating impulse response
 <pre>
 <code>%generating impulse response
@@ -88,22 +88,19 @@ end</code>
 
 #### DAC
 <pre>
-<code>%frequency response graph
-H = fft(ht,length_ht);
-H = [H(length_ht/2+1:length_ht) H(1:length_ht/2)];
-figure(100);
-plot(abs(H));</code>
+<code>%1. DAC
+reconstFilter = ones(1,Tsym*fs);</code>
 </pre>
 
 >* 
 
 
-*참조 개념 : ADC/DAC*
-*  sampling + Quantization
+> *참조 개념 : ADC/DAC*
+sampling + Quantization
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5OTY3NjgwMiwyMzE1NzA5OTAsLTg1Mz
+eyJoaXN0b3J5IjpbLTgyMjc5NTQ1OCwyMzE1NzA5OTAsLTg1Mz
 EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
 fQ==
 -->
