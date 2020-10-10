@@ -10,8 +10,8 @@ length_ht = 1024; % length of channel impulse response
 Tp = [2 3 5 6 7 8 9 100];</code>
 </pre>
 
-> * ht의 length를 1024로 설정함
-> * time delay spread에 따라 그래프가 달라짐
+* ht의 length를 1024로 설정함
+ * time delay spread에 따라 그래프가 달라짐
 
 >참조 개념 : impluse response
 >*  Band-pass system에 대한 baseband representation 정의
@@ -25,8 +25,8 @@ ht = zeros(1,length_ht);
 ht(Tp) = ones(1,length(Tp));</code>
 </pre>
 
-> * ht 벡터를 1부터 ht의 길이만큼(=1024) 0으로 채운 것으로 정의
-> * ht(Tp) 벡터를 1부터 ht(Tp) 길이만큼 (=8) 1로 채운 것으로 정의
+ * ht 벡터를 1부터 ht의 길이만큼(=1024) 0으로 채운 것으로 정의
+ * ht(Tp) 벡터를 1부터 ht(Tp) 길이만큼 (=8) 1로 채운 것으로 정의
 
 ### frequency response graph
 <pre>
@@ -37,10 +37,10 @@ figure(100);
 plot(abs(H));</code>
 </pre>
 
->*  ht와 length_ht를 fourier 한 것을 H로 정의
->*  H 벡터를 반 잘라 앞의 것은 뒤로, 뒤의 것은 앞으로 붙여서 새로운 H 벡터를 만듦 (wrap around)
-> * figure(100) : 그래프 창 생성
-> * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
+*  ht와 length_ht를 fourier 한 것을 H로 정의
+*  H 벡터를 반 잘라 앞의 것은 뒤로, 뒤의 것은 앞으로 붙여서 새로운 H 벡터를 만듦 (wrap around)
+ * figure(100) : 그래프 창 생성
+ * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
 
 ***
 ### 포인트
@@ -65,8 +65,8 @@ t = [1/fs : 1/fs : Tmax];   % time vector
 N_subFig = 6;</code>
 </pre>
 
-> * t : 1/fs에서 Tmax까지 1/fs만큼 증가하는 벡터를 만들라
-> N_subFig : 그래프 그릴 때 설정한 변수
+ * t : 1/fs에서 Tmax까지 1/fs만큼 증가하는 벡터를 만들라
+* N_subFig : 그래프 그릴 때 설정한 변수
 
 ### TX
 #### baseband signal generation
@@ -80,7 +80,7 @@ for i = 1 : Nsym
 end</code>
 </pre>
 
-> * randi : random 함수. 1xNsym벡터에 2가 최대인 난수 발생
+ * randi : random 함수. 1xNsym벡터에 2가 최대인 난수 발생
 > > bbSym이 왜 저런 함수를 가졌지
 > >> 추측 1. (2*randi(2,1,Nsym)-3)로 +1과 -1 크기를 가진 난수 발생
 > >> 추측 2. (1/sqrt(2))를 곱함으로써 크기를 1로 맞춤
@@ -183,12 +183,15 @@ plot(t,Qch);</code>
 for i = 1 : Nsym
     n_start = (i-1)*Tsym*fs;
     bbSym_rx(i) = sum( Ich(n_start+1:n_start+Tsym*fs) - j*Qch(n_start+1:n_start+Tsym*fs) );
-end </code>
+end 
+
+ph_tx= angle(bbSym);
+ph_rx=angle(bbSym_rx);</code>
 </pre>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4Nzk4MzQyNiwxNDk0NDQ0ODk0LDIzMT
-U3MDk5MCwtODUzMTIyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQs
-MTE2NzgwNDgwN119
+eyJoaXN0b3J5IjpbLTExNDk4NzMxODMsMTQ5NDQ0NDg5NCwyMz
+E1NzA5OTAsLTg1MzEyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0
+LDExNjc4MDQ4MDddfQ==
 -->
