@@ -65,19 +65,20 @@ t = [1/fs : 1/fs : Tmax];   % time vector
 N_subFig = 6;</code>
 </pre>
 
-> * t 는 1/fs에서 Tmax까지 1/fs만큼 증가하는 벡터를 만들라
-> N_subFig는 그래프 그
-```
-참조 개념 : impluse response
-*  Band-pass system에 대한 baseband representation 정의
-* 일반 baseband representation과 유사하게 복소수로 표현
-> h(t) = 2hI(t)cos(2pifct)-2hQ(t)sin(2pifct)
-```
-### generating impulse response
+> * t : 1/fs에서 Tmax까지 1/fs만큼 증가하는 벡터를 만들라
+> N_subFig : 그래프 그릴 때 설정한 변수
+
+### TX
+#### baseband signal generation
 <pre>
-<code>%generating impulse response
-ht = zeros(1,length_ht);
-ht(Tp) = ones(1,length(Tp));</code>
+<code>%0. baseband signal generation
+bbSym = (1/sqrt(2)) * ( (2*randi(2,1,Nsym)-3) + j*(2*randi(2,1,Nsym)-3));
+
+bbInput = zeros(1,length(t));
+for i = 1 : Nsym
+    bbInput(Tsym*fs*(i-1)+1) = bbSym(i);
+end
+</code>
 </pre>
 
 > * ht 벡터를 1부터 ht의 길이만큼(=1024) 0으로 채운 것으로 정의
@@ -97,6 +98,6 @@ plot(abs(H));</code>
 > * figure(100) : 그래프 창 생성
 > * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzcxMzM1MywtODUzMTIyNzk3LDkxMT
+eyJoaXN0b3J5IjpbMTIwMDI4MTQwMiwtODUzMTIyNzk3LDkxMT
 QxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
 -->
