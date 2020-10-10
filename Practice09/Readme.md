@@ -40,8 +40,10 @@ plot(abs(H));
 </code>
 <pre>
 
-> h
+> ht와 length_ht를 fourier 한 것을 H로 정의
+> H 벡터를 반 잘라 앞의 것은 뒤로, 뒤의 것은 앞으로 붙여서 새로운 H 벡터를 만듦 (wrap around)
+> 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDQ0MTQ4MSw1NjkxOTYzMjQsMTE2Nz
-gwNDgwN119
+eyJoaXN0b3J5IjpbODQ4OTYyOTI3LDU2OTE5NjMyNCwxMTY3OD
+A0ODA3XX0=
 -->
