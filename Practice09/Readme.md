@@ -160,13 +160,16 @@ plot(t,Qch);</code>
 > *참고자료*
 > * Linear Detector g(t)
 	> 	* noise 대비 수신 성능 개선을 위한 사전 filtering 처리
-	>* SNR 극대화되는 impulse response g(t)
-	* 
+	>	* SNR 극대화되는 impulse response g(t)
+	>		*	symbol = 1 : y 최대화
+	>		* symbol = 0 : y 최소화
+	>* Matched Filter
+	> SNR을  
 	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTUwNzUwMSwyMzE1NzA5OTAsLTg1Mz
+eyJoaXN0b3J5IjpbLTUzMTQxMTY3NywyMzE1NzA5OTAsLTg1Mz
 EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
 fQ==
 -->
