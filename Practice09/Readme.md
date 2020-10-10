@@ -82,7 +82,8 @@ end</code>
 
 > * randi : random 함수. 1xNsym벡터에 2가 최대인 난수 발생
 > > bbSym이 왜 저런 함수를 가졌지
-> >> 추측 1. 
+> >> 추측 1. (2*randi(2,1,Nsym)-3)로 +1과 -1 크기를 가진 난수 발생
+> >> 추측 2. (1/sqrt(2))를 곱함으로써 크기를 1로 맞춤
 > 
 > 1부터 t의 길이만큼 0을 가지는 벡터 bbInput 정의
 > > bbSym(i)를 bbInput에 저장
@@ -172,10 +173,12 @@ plot(t,Qch);</code>
 	> c : normalization factor
 	> Y : matched filter의 출력
 > ```
->	
+>	* Correlation Reciever 
+> matched filter 수신기 구조
+	> 	*
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzQ2Mjc1NCwxNDk0NDQ0ODk0LDIzMT
-U3MDk5MCwtODUzMTIyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQs
-MTE2NzgwNDgwN119
+eyJoaXN0b3J5IjpbOTY0MzI0MTM3LDE0OTQ0NDQ4OTQsMjMxNT
+cwOTkwLC04NTMxMjI3OTcsOTExNDE5NDM4LDU2OTE5NjMyNCwx
+MTY3ODA0ODA3XX0=
 -->
