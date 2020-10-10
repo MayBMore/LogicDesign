@@ -28,9 +28,20 @@ ht(Tp) = ones(1,length(Tp));
 </pre>
 
 > ht 벡터를 1부터 ht의 길이만큼(=1024) 0으로 채운 것으로 정의
-> ht(Tp) 벡터를 1부터 ht(Tp) 길이만큼 (=8) 1로 채운
+> ht(Tp) 벡터를 1부터 ht(Tp) 길이만큼 (=8) 1로 채운 것으로 정의
 
+### frequency response graph
+<pre>
+<code>%frequency response graph
+H = fft(ht,length_ht);
+H = [H(length_ht/2+1:length_ht) H(1:length_ht/2)];
+figure(100);
+plot(abs(H));
+</code>
+<pre>
+
+> h
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4MzU3NzEsNTY5MTk2MzI0LDExNjc4MD
-Q4MDddfQ==
+eyJoaXN0b3J5IjpbMjEyMDQ0MTQ4MSw1NjkxOTYzMjQsMTE2Nz
+gwNDgwN119
 -->
