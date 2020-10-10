@@ -27,9 +27,10 @@ ht(Tp) = ones(1,length(Tp));
 </code>
 </pre>
 
-> h(t) 벡터를 1부터 h(t)의 길이만큼(=1024) 
+> h(t) 벡터를 1부터 h(t)의 길이만큼(=1024) 0으로 채운다
+> h(t)에 time delay를 넣은  벡터를 1부터 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg0NjAyMzUxLDU2OTE5NjMyNCwxMTY3OD
-A0ODA3XX0=
+eyJoaXN0b3J5IjpbMTM3ODM4MDY3Myw1NjkxOTYzMjQsMTE2Nz
+gwNDgwN119
 -->
