@@ -86,7 +86,9 @@ end</code>
 > 1부터 t의 길이만큼 0을 가지는 벡터 bbInput 정의
 > > bbSym(i)를 bbInput에 저장
 
-> 
+> *참고 개념 : Baseband*
+> * low pass
+> * fc
 
 #### DAC
 <pre>
@@ -129,6 +131,9 @@ plot(t,RFsignal);</code>
 >* TX에서 up-conversion (RX에서 down-conversion)
 > * .*은 요소별 곱
 
+> *참고 개념 : Mixer*
+> 다른 주파수로 평행이동 (frequency translation)
+
 ### RX
 #### coherent detection
 <pre>
@@ -149,7 +154,7 @@ plot(t,Qch);</code>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1MjE1MTIyLDIzMTU3MDk5MCwtODUzMT
-IyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
-
+eyJoaXN0b3J5IjpbMTg3NjExODk0MiwyMzE1NzA5OTAsLTg1Mz
+EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
+fQ==
 -->
