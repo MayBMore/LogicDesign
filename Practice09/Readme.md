@@ -42,8 +42,9 @@ plot(abs(H));
 
 > ht와 length_ht를 fourier 한 것을 H로 정의
 > H 벡터를 반 잘라 앞의 것은 뒤로, 뒤의 것은 앞으로 붙여서 새로운 H 벡터를 만듦 (wrap around)
-> 
+> figure(100) : 그래프 창 생성
+> plot(abs(H)) : H의 절댓값한 그래프를 그려라.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4OTYyOTI3LDU2OTE5NjMyNCwxMTY3OD
+eyJoaXN0b3J5IjpbOTExNDE5NDM4LDU2OTE5NjMyNCwxMTY3OD
 A0ODA3XX0=
 -->
