@@ -164,12 +164,13 @@ plot(t,Qch);</code>
 	>		*	symbol = 1 : y 최대화
 	>		* symbol = 0 : y 최소화
 	>* Matched Filter
-	> SNR을  
+	> SNR을 최대로 만들어주는 linear detector
+	>		>  
 	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMTQxMTY3NywyMzE1NzA5OTAsLTg1Mz
-EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
-fQ==
+eyJoaXN0b3J5IjpbLTE3MzIzNjAxMDAsMjMxNTcwOTkwLC04NT
+MxMjI3OTcsOTExNDE5NDM4LDU2OTE5NjMyNCwxMTY3ODA0ODA3
+XX0=
 -->
