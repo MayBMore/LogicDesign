@@ -84,7 +84,6 @@ end</code>
 > > bbSym이 왜 저런 함수를 가졌지
 > 
 > 1부터 t의 길이만큼 0을 가지는 벡터 bbInput 정의
-> > 
 
 ### frequency response graph
 <pre>
@@ -100,7 +99,7 @@ plot(abs(H));</code>
 > * figure(100) : 그래프 창 생성
 > * plot(abs(H)) : H의 절댓값한 그래프를 그려라.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzY3NTg1OTksMjMxNTcwOTkwLC04NT
-MxMjI3OTcsOTExNDE5NDM4LDU2OTE5NjMyNCwxMTY3ODA0ODA3
-XX0=
+eyJoaXN0b3J5IjpbMjAyNTEyMzA4NywyMzE1NzA5OTAsLTg1Mz
+EyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0LDExNjc4MDQ4MDdd
+fQ==
 -->
