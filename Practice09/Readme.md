@@ -154,10 +154,10 @@ subplot(N_subFig,1,6);
 plot(t,Qch);</code>
 </pre>
 
-> * TX에서 보낸 RFsignal을 I-channel과 Q-channel로 분리해서 받음
->  * I-channel과 Q-channel을 알 수 있음
->  > * subplot 1.5 : I-channel
->  > * subplot 1.6 : Q-channel
+ * TX에서 보낸 RFsignal을 I-channel과 Q-channel로 분리해서 받음
+  * I-channel과 Q-channel을 알 수 있음
+	 * subplot 1.5 : I-channel
+	 * subplot 1.6 : Q-channel
 
 > *참고자료*
 > * Linear Detector g(t)
@@ -189,9 +189,10 @@ ph_tx= angle(bbSym);
 ph_rx=angle(bbSym_rx);</code>
 </pre>
 
+* n
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTYzNjAzNSwxNDk0NDQ0ODk0LDIzMT
-U3MDk5MCwtODUzMTIyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQs
-MTE2NzgwNDgwN119
+eyJoaXN0b3J5IjpbLTExODYzNTM2NzUsMTQ5NDQ0NDg5NCwyMz
+E1NzA5OTAsLTg1MzEyMjc5Nyw5MTE0MTk0MzgsNTY5MTk2MzI0
+LDExNjc4MDQ4MDddfQ==
 -->
