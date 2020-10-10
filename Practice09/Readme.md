@@ -11,7 +11,7 @@ Tp = [2 3 5 6 7 8 9 100];
 </code>
 </pre>
 
-> h(t)의 length를 1024로 설정함
+> ht의 length를 1024로 설정함
 > time delay spread에 따라 그래프가 달라짐
 
 #### impluse response
@@ -27,10 +27,10 @@ ht(Tp) = ones(1,length(Tp));
 </code>
 </pre>
 
-> h(t) 벡터를 1부터 h(t)의 길이만큼(=1024) 0으로 채운다
-> h(t)에 time delay를 넣은  벡터를 1부터 
+> ht 벡터를 1부터 ht의 길이만큼(=1024) 0으로 채운 것으로 정의
+> ht(Tp) 벡터를 1부터 ht(Tp) 길이만큼 (=8) 1로 채운
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODM4MDY3Myw1NjkxOTYzMjQsMTE2Nz
-gwNDgwN119
+eyJoaXN0b3J5IjpbODQ4MzU3NzEsNTY5MTk2MzI0LDExNjc4MD
+Q4MDddfQ==
 -->
