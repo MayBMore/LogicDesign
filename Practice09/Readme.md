@@ -12,6 +12,9 @@ Tp = [2 3 5 6 7 8 9 100];
 </code>
 </pre>
 
+> h(t)의 length를 1024로 설정함
+> time delay spread에 따라 그래프가 달라짐
+
 #### impluse response
 *  Band-pass system에 대한 baseband representation 정의
 * 일반 baseband representation과 유사하게 복소수로 표현
@@ -19,6 +22,6 @@ Tp = [2 3 5 6 7 8 9 100];
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDY3MDgzNSw1NjkxOTYzMjQsMTE2Nz
-gwNDgwN119
+eyJoaXN0b3J5IjpbLTExNTEyOTQyNzEsNTY5MTk2MzI0LDExNj
+c4MDQ4MDddfQ==
 -->
