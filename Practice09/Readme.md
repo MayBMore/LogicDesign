@@ -86,6 +86,8 @@ end</code>
 > 1부터 t의 길이만큼 0을 가지는 벡터 bbInput 정의
 > > bbSym(i)를 bbInput에 저장
 
+> 
+
 #### DAC
 <pre>
 <code>%1. DAC
@@ -141,9 +143,13 @@ plot(t,Qch);</code>
 </pre>
 
 > * TX에서 보낸 RFsignal을 I-channel과 Q-channel로 분리해서 받음
->  * I-ch
+>  * I-channel과 Q-channel을 알 수 있음
+>  > * subplot 1.5 : I-channel
+>  > * subplot 1.6 : Q-channel
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0OTYzMTIsMjMxNTcwOTkwLC04NTMxMj
-I3OTcsOTExNDE5NDM4LDU2OTE5NjMyNCwxMTY3ODA0ODA3XX0=
+eyJoaXN0b3J5IjpbNzE1MjE1MTIyLDIzMTU3MDk5MCwtODUzMT
+IyNzk3LDkxMTQxOTQzOCw1NjkxOTYzMjQsMTE2NzgwNDgwN119
 
 -->
